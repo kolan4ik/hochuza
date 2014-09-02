@@ -342,6 +342,7 @@ tbody tr:nth-child(even) {
 }
 tbody td, tbody th {
   min-height: 52px;
+  background: none !important;
 }
 
 html {
@@ -3019,6 +3020,12 @@ input[type="number"]:after {
   padding: 0 0 0 197px;
   text-align: left;
   clear: both;
+}
+
+.img-circle {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
 /***************************************************/
