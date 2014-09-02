@@ -1890,6 +1890,9 @@ input[type="number"]{
   overflow: hidden;
   clear: both;
   margin: 0 0 12px;
+  td, th{
+    text-align: center;
+  }
 }
 .accordion-title{
   color: #9f9f9f;

@@ -299,7 +299,7 @@ table td:first-child, table th:first-child {
 table td:nth-child(3), table td:nth-child(4), table th:nth-child(3), table th:nth-child(4) {
   text-align: right !important;
 }
-table td:last-child, table th:last-child {
+table td:nth-child(5), table th:nth-child(5) {
   padding-right: 30px;
   text-align: right !important;
 }
@@ -337,7 +337,7 @@ tbody tr {
   height: 52px;
 }
 tbody tr:nth-child(even) {
-  background: #eeeeee;
+  background: #eeeeee !important;
 }
 tbody td, tbody th {
   min-height: 52px;
@@ -2876,6 +2876,9 @@ input[type="number"]:after {
   overflow: hidden;
   clear: both;
   margin: 0 0 12px;
+}
+.accordion-item td, .accordion-item th {
+  text-align: center;
 }
 
 .accordion-title {
