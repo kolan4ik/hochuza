@@ -294,7 +294,7 @@ table td, table th {
 }
 table td:first-child, table th:first-child {
   padding: 13px 0 16px 35px;
-  width: 91px !important;
+  min-width: 91px !important;
 }
 table td:nth-child(3), table td:nth-child(4), table th:nth-child(3), table th:nth-child(4) {
   text-align: right !important;
@@ -334,6 +334,7 @@ tbody {
   box-sizing: border-box;
 }
 tbody tr {
+  background: #f3f3f3 !important;
   height: 52px;
 }
 tbody tr:nth-child(even) {
