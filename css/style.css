@@ -2633,6 +2633,8 @@ input[type="number"]:after {
   color: #afafaf;
   font-size: 41px;
   line-height: 41px;
+  overflow: hidden;
+  margin: 0 0 20px;
 }
 .result-table p, .calc-item p {
   float: right;
