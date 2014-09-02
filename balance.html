@@ -77,135 +77,98 @@
                     </div>
                 </div>
                 <div class="history-table">
-                    <table>
+                    <table id="tbl" class="table order-column table-bordered hover dataTable no-footer" width="100%"
+                           cellspacing="0" role="grid" aria-describedby="tbl_info" style="width: 100%;">
                         <thead>
-                        <tr>
-                            <td><a href="#">дата <i class="icon-caret-up"></i></a></td>
-                            <td><a href="#">проведённая операция <i class="icon-caret-up"></i></a></td>
-                            <td><a href="#">сумма <i class="icon-caret-up"></i></a></td>
-                            <td><a href="#">остаток <i class="icon-caret-up"></i></a></td>
+                        <tr role="row">
+                            <th data-toggle="class" class="th-sortable sorting_asc" width="100" tabindex="0"
+                                aria-controls="tbl" rowspan="1" colspan="1" aria-sort="ascending"
+                                aria-label="Дата: activate to sort column ascending" style="width: 38px;">Дата
+                            </th>
+                            <th class="sorting" tabindex="0" aria-controls="tbl" rowspan="1" colspan="1"
+                                aria-label="Операция: activate to sort column ascending" style="width: 77px;">Операция
+                            </th>
+                            <th width="100" class="sorting" tabindex="0" aria-controls="tbl" rowspan="1" colspan="1"
+                                aria-label="Сумма: activate to sort column ascending" style="width: 53px;">Сумма
+                            </th>
+                            <th width="100" class="sorting" tabindex="0" aria-controls="tbl" rowspan="1" colspan="1"
+                                aria-label="Остаток: activate to sort column ascending" style="width: 65px;">Остаток
+                            </th>
+                            <th width="200" class="sorting" tabindex="0" aria-controls="tbl" rowspan="1" colspan="1"
+                                aria-label="Автор: activate to sort column ascending" style="width: 48px;">Автор
+                            </th>
                         </tr>
                         </thead>
-                        <tbody>
-                        <tr>
-                            <td>25/08/2014</td>
-                            <td><a href="#">Списание на id1234567890</a></td>
-                            <td><span class="negative-balance">-20,00</span></td>
-                            <td><span>-20,00</span></td>
+                        <tbody id="div-update">
+                        <tr role="row" class="odd">
+                            <td class="sorting_1">2014-08-06</td>
+                            <td>списание за id 188</td>
+                            <td style="color:red">-20,00</td>
+                            <td>-20,00</td>
+                            <td>Администратор</td>
                         </tr>
-                        <tr>
-                            <td>26/08/2014</td>
-                            <td><a href="#">Списание на id1234567890</a></td>
-                            <td><span class="negative-balance">-180,00</span></td>
-                            <td><span>-200,00</span></td>
+                        <tr role="row" class="even">
+                            <td class="sorting_1">2014-08-06</td>
+                            <td>списание за id 187</td>
+                            <td style="color:red">-20,00</td>
+                            <td>-40,00</td>
+                            <td>Администратор</td>
                         </tr>
-                        <tr>
-                            <td>27/08/2014</td>
-                            <td><a href="#">Списание на id1234567890</a></td>
-                            <td><span class="negative-balance">-25,50</span></td>
-                            <td><span>-225,50</span></td>
+                        <tr role="row" class="odd">
+                            <td class="sorting_1">2014-08-06</td>
+                            <td>списание за id 186</td>
+                            <td style="color:red">-20,00</td>
+                            <td>-60,00</td>
+                            <td>Администратор</td>
                         </tr>
-                        <tr>
-                            <td>28/08/2014</td>
-                            <td><a href="#">Списание на id1234567890</a></td>
-                            <td><span class="negative-balance">-20,00</span></td>
-                            <td><span>-245,00</span></td>
+                        <tr role="row" class="even">
+                            <td class="sorting_1">2014-08-06</td>
+                            <td>списание за id 185</td>
+                            <td style="color:red">-20,00</td>
+                            <td>-80,00</td>
+                            <td>Администратор</td>
                         </tr>
-                        <tr>
-                            <td>29/08/2014</td>
-                            <td><a href="#">Списание на id1234567890</a></td>
-                            <td><span class="deposit-balance">100,00</span></td>
-                            <td><span>-145,00</span></td>
+                        <tr role="row" class="odd">
+                            <td class="sorting_1">2014-08-06</td>
+                            <td>списание за id 184</td>
+                            <td style="color:red">-20,00</td>
+                            <td>-100,00</td>
+                            <td>Администратор</td>
                         </tr>
-                        <tr>
-                            <td>30/08/2014</td>
-                            <td><a href="#">Списание на id1234567890</a></td>
-                            <td><span class="deposit-balance">500,00</span></td>
-                            <td><span>355,00</span></td>
+                        <tr role="row" class="even">
+                            <td class="sorting_1">2014-08-06</td>
+                            <td>списание за id 183</td>
+                            <td style="color:red">-20,00</td>
+                            <td>-120,00</td>
+                            <td>Администратор</td>
                         </tr>
-                        <tr>
-                            <td>31/08/2014</td>
-                            <td><a href="#">Списание на id1234567890</a></td>
-                            <td><span>0,0</span></td>
-                            <td><span>355,00</span></td>
+                        <tr role="row" class="odd">
+                            <td class="sorting_1">2014-08-06</td>
+                            <td>списание за id 182</td>
+                            <td style="color:red">-20,00</td>
+                            <td>-140,00</td>
+                            <td>Администратор</td>
                         </tr>
-                        <tr>
-                            <td>01/09/2014</td>
-                            <td><a href="#">Списание на id1234567890</a></td>
-                            <td><span>-200,00</span></td>
-                            <td><span>155,00</span></td>
+                        <tr role="row" class="even">
+                            <td class="sorting_1">2014-08-06</td>
+                            <td>списание за id 181</td>
+                            <td style="color:red">-20,00</td>
+                            <td>-160,00</td>
+                            <td>Администратор</td>
                         </tr>
-                        <tr>
-                            <td>02/09/2014</td>
-                            <td><a href="#">Списание на id1234567890</a></td>
-                            <td><span>-155,00</span></td>
-                            <td><span>0,0</span></td>
+                        <tr role="row" class="odd">
+                            <td class="sorting_1">2014-08-06</td>
+                            <td>списание за id 180</td>
+                            <td style="color:red">-20,00</td>
+                            <td>-180,00</td>
+                            <td>Администратор</td>
                         </tr>
-                        <tr>
-                            <td>03/09/2014</td>
-                            <td><a href="#">Списание на id1234567890</a></td>
-                            <td><span>-245,00</span></td>
-                            <td><span>-245,00</span></td>
-                        </tr>
-                        <tr>
-                            <td>25/08/2014</td>
-                            <td><a href="#">Списание на id1234567890</a></td>
-                            <td><span>-20,00</span></td>
-                            <td><span>-20,00</span></td>
-                        </tr>
-                        <tr>
-                            <td>26/08/2014</td>
-                            <td><a href="#">Списание на id1234567890</a></td>
-                            <td><span>-180,00</span></td>
-                            <td><span>-200,00</span></td>
-                        </tr>
-                        <tr>
-                            <td>27/08/2014</td>
-                            <td><a href="#">Списание на id1234567890</a></td>
-                            <td><span>-25,50</span></td>
-                            <td><span>-225,50</span></td>
-                        </tr>
-                        <tr>
-                            <td>28/08/2014</td>
-                            <td><a href="#">Списание на id1234567890</a></td>
-                            <td><span>-20,00</span></td>
-                            <td><span>-245,00</span></td>
-                        </tr>
-                        <tr>
-                            <td>29/08/2014</td>
-                            <td><a href="#">Списание на id1234567890</a></td>
-                            <td><span>100,00</span></td>
-                            <td><span>-145,00</span></td>
-                        </tr>
-                        <tr>
-                            <td>30/08/2014</td>
-                            <td><a href="#">Списание на id1234567890</a></td>
-                            <td><span>500,00</span></td>
-                            <td><span>355,00</span></td>
-                        </tr>
-                        <tr>
-                            <td>31/08/2014</td>
-                            <td><a href="#">Списание на id1234567890</a></td>
-                            <td><span>0,0</span></td>
-                            <td><span>355,00</span></td>
-                        </tr>
-                        <tr>
-                            <td>01/09/2014</td>
-                            <td><a href="#">Списание на id1234567890</a></td>
-                            <td><span>-200,00</span></td>
-                            <td><span>155,00</span></td>
-                        </tr>
-                        <tr>
-                            <td>02/09/2014</td>
-                            <td><a href="#">Списание на id1234567890</a></td>
-                            <td><span>-155,00</span></td>
-                            <td><span>0,0</span></td>
-                        </tr>
-                        <tr>
-                            <td>03/09/2014</td>
-                            <td><a href="#">Списание на id1234567890</a></td>
-                            <td><span>-245,00</span></td>
-                            <td><span>-245,00</span></td>
+                        <tr role="row" class="even">
+                            <td class="sorting_1">2014-08-06</td>
+                            <td>списание за id 179</td>
+                            <td style="color:red">-20,00</td>
+                            <td>-200,00</td>
+                            <td>Администратор</td>
                         </tr>
                         </tbody>
                     </table>

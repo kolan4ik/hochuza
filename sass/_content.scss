@@ -387,15 +387,15 @@
   }
   .icon-plus{
     width: 40px;
-    height: 40px;
-    border-left: 1px solid #f4f4f4;
+    height: 42px;
+    border: 1px solid #f4f4f4;
     background: #fcfcfc;
     @include box-sizing(border-box);
     color: #00ae9d;
     font-size: 16px;
     position: absolute;
-    top: 1px;
-    right: 4px;
+    top: 0;
+    right: 3px;
     padding: 13px 0 0 12px;
     display: none !important;
     cursor: pointer;
@@ -1627,12 +1627,10 @@ input[type="number"]{
 .history-table{
   margin: 26px 0 24px;
   tbody{
-    height: 527px;
-    overflow-y: auto;
-    display: inline-block;
     width: 100%;
     @include box-sizing(border-box);
   }
+
   i{
     display: inline-block;
     width: auto;
@@ -1936,26 +1934,29 @@ input[type="number"]{
 }
 .accordion-in{
   display: none;
-  li{
-    float: left;
-    width: 25%;
-    text-align: center;
-  }
-  a{
-    text-decoration: none;
-    display: inline-block;
-    padding: 0 0 6px;
-    width: 100%;
-    color: #c6c6c6;
-    font-family: "HelveticaNeueCyr";
-    font-size: 18px;
-    border-bottom: 2px solid #d5d5d5;
-    text-transform: uppercase;
-    &:hover{
-      color: #00ad9d;
-      border-bottom: 2px solid #00ad9d;
+  & > ul{
+    li{
+      float: left;
+      width: 25%;
+      text-align: center;
+    }
+    a{
+      text-decoration: none;
+      display: inline-block;
+      padding: 0 0 6px;
+      width: 100%;
+      color: #c6c6c6;
+      font-family: "HelveticaNeueCyr";
+      font-size: 18px;
+      border-bottom: 2px solid #d5d5d5;
+      text-transform: uppercase;
+      &:hover{
+        color: #00ad9d;
+        border-bottom: 2px solid #00ad9d;
+      }
     }
   }
+
   .active{
     a{
       color: #00ad9d;
@@ -1969,9 +1970,6 @@ input[type="number"]{
   margin: 0 0 18px;
 }
 .error-forms{
-  span{
-    color: #d5614f;
-  }
   label{
     border-right: 1px solid #e0a69d;
     text-align: center;
@@ -1982,6 +1980,12 @@ input[type="number"]{
     border: 1px solid #e0a69d;
     background: #fff9f9;
   }
+  .icon-plus{
+    border-left: 1px solid #e0a69d;
+  }
+  .cool_red{
+    color: #d5614f;
+  }
 }
 .regis-bottom{
   @extend .login-bottom;
@@ -1991,4 +1995,39 @@ input[type="number"]{
 }
 .mydate{
   line-height: 40px;
+}
+.form-item{
+  overflow: hidden;
+  margin: 0 0 18px;
+  label{
+    color: #9f9f9f;
+    font-family: "HelveticaNeueCyr";
+    font-size: 16px;
+    float: left;
+    width: 147px;
+    text-align: left;
+    line-height: 40px;
+    padding: 0 0 0 50px;
+    border: none;
+  }
+  input{
+    width: 312px;
+    height: 42px;
+    border: 1px solid #ebebeb;
+    background-color: #fff;
+    float: left;
+    margin: 0 0 5px;
+    padding: 0 0 0 14px;
+    @include box-sizing(border-box);
+  }
+  span{
+    color: #9f9f9f;
+    font-size: 12px !important;
+    margin: 0 !important;
+    display: block !important;
+    padding: 0 0 0 197px;
+    text-align: left;
+    clear: both;
+
+  }
 }

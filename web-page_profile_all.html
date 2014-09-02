@@ -59,9 +59,9 @@
                             </div>
                         </div>
                         <div class="contact-user__in fl_r">
-                            <p><i class="icon-user"></i><input type="text" readonly value="Имя Фамилия"/><i class="icon-pencil"></i></p>
+                            <p ><i class="icon-user"></i><input type="text" readonly value="Имя Фамилия"/><i class="icon-pencil"></i></p>
                             <p><i class="icon-mail"></i><input type="email" readonly value="welcome@bigdig.com.ua"/></p>
-                            <p class="tel-user"><i class="icon-mobile"></i><input type="text" readonly value="(012) 345-67-89"/> <i class="icon-plus"></i> </p>
+                            <p class="tel-user error-forms"><i class="icon-mobile"></i><input type="text" readonly value="(012) 345-67-89"/> <i class="icon-plus"></i> </p>
                             <p><i class="icon-key"></i><a class="open-pass-popup" href="#">Изменить пароль</a></p>
                         </div>
                         <div class="btn-group">
@@ -96,11 +96,12 @@
                         <a class="close-popup" href="#"></a>
                         <h2>Изменить пароль</h2>
                         <form class="form-chenche-password" action="">
-                            <div class="form-item">
+                            <div class="form-item error-forms">
                                 <label for="pas">Старый пароль:</label>
                                 <input type="password" id="pas">
+                                <span class="negative-balance">error</span>
                             </div>
-                            <div class="form-item">
+                            <div class="form-item error-forms">
                                 <label for="pas1">Новый пароль:</label>
                                 <input type="password" id="pas1">
                                 <span>более 6 символов</span>
