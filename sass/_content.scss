@@ -293,6 +293,9 @@
   @include transition-duration(0.5s);
   cursor: pointer;
   position: relative;
+  &:before{
+    content: "\e618";
+  }
   i{
     font-size: 30px !important;
     color: #fff !important;
@@ -410,7 +413,7 @@
 .clone-box{
   .icon-plus{
     &:before {
-      content: "\e611";
+      content: "\e610";
     }
   }
 }
@@ -711,6 +714,8 @@
     left: -1px;
     width: 100%;
     overflow: hidden;
+    max-height: 236px;
+    overflow-y: auto;
     li{
       a{
         padding: 5px 0 5px 20px;
