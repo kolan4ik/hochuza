@@ -123,7 +123,7 @@ strong{
 
 .login-form-item{
   display: inline-block;
-  overflow: hidden;
+  @include clearfix;
   padding: 0 15px;
   margin: 0 0 15px;
   @include box-sizing(border-box);
@@ -138,7 +138,7 @@ strong{
     z-index: 4;
     cursor: pointer;
   }
-  input{
+  input, .bt-dropdown{
     float: left;
     margin: 0 0 0 -42px;
     color: #a3a3a3;
@@ -152,14 +152,10 @@ strong{
     @include box-sizing(border-box);
   }
   .icon-mail{
-    margin-top: 11px;
     font-size: 22px;
-    color: #aaaaaa;
   }
   .icon-mobile{
     font-size: 22px;
-    margin-top: 11px;
-    color: #aaaaaa;
   }
   span{
     display: inline-block;
@@ -175,9 +171,48 @@ strong{
     @include clearfix;
   }
   i{
+    color: #aaaaaa;
     margin: 8px 0 0 !important;
     float: none;
     width: auto;
+    font-size: 22px;
+    display: inline-block;
+  }
+  .bt-dropdown{
+    margin: 0 auto;
+    position: relative;
+    a{
+      text-align: left;
+      line-height: 42px;
+      display: block;
+      color: #a3a3a3;
+      padding: 0 0 0 54px;
+      font-family: "HelveticaNeueCyr";
+      font-size: 16px;
+      text-decoration: none;
+      width: 100%;
+    }
+  }
+  .bt-dropdown-toggle{
+    padding: 0 !important;
+    width: 100% !important;
+    position: relative;
+    &:after{
+      width: 0;
+      height: 0;
+      display: inline-block;
+      position: absolute;
+      content: "";
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-top: 7px solid #bdbbbc;
+      right: 17px;
+      top: 17px;
+    }
+  }
+  .bt-dropdown-options{
+    width: 100%;
+    top: 41px;
   }
 }
 form{

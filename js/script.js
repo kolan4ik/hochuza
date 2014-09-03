@@ -163,7 +163,7 @@ $(document).ready(function(){
             $(this).siblings().slideUp();
         }
         else{
-            $('.accordion-title').removeClass('active')
+            $('.accordion-title').removeClass('active');
             $(this).addClass('active');
             $('.accordion-in').slideUp();
             $(this).siblings().slideDown();
@@ -173,7 +173,11 @@ $(document).ready(function(){
        $(this).parent('td').toggleClass('arr-bottom');
         return false
     });
-
+    $('.managing-menu a').on('click', function(){
+        $('.managing-menu li').removeClass('active');
+        $(this).parent().addClass('active');
+        return false
+    });
     if($('.content').height() < 800){
         $('.man').addClass('slippers');
         $('.man').removeClass('man');
