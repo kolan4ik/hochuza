@@ -157,9 +157,21 @@ h4{
   line-height: 52px;
   margin: 4px 89px 0 4px;
 }
+.notification-success{
+  font-family: 'HelveticaNeueCyr';
+  color: green !important;
+  background: rgba(green, 0.3);
+  font-size: 14px !important;
+  margin: 0 0 -10px!important;
+  padding: 3px 0;
+}
+.notification-error{
+  @extend .notification-success;
+  color: red !important;
+  background: rgba(red, 0.3);
+}
 
-
-/***************************************************/
+  /***************************************************/
 /*      header
 /***************************************************/
 @import "header";

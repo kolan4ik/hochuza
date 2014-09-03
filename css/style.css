@@ -551,6 +551,20 @@ h4 {
   margin: 4px 89px 0 4px;
 }
 
+.notification-success, .notification-error {
+  font-family: 'HelveticaNeueCyr';
+  color: green !important;
+  background: rgba(0, 128, 0, 0.3);
+  font-size: 14px !important;
+  margin: 0 0 -10px !important;
+  padding: 3px 0;
+}
+
+.notification-error {
+  color: red !important;
+  background: rgba(255, 0, 0, 0.3);
+}
+
 /***************************************************/
 /*      header
 /***************************************************/
@@ -2251,6 +2265,7 @@ input[type="number"]:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  min-height: 158px;
 }
 .box-right button, .box-right-button button {
   color: #fff;

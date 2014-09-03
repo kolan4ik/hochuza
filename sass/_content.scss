@@ -1242,6 +1242,7 @@ input[type="number"]{
   background-color: #f1f1f1;
   margin: 0 0 0 15px;
   @include box-sizing(border-box);
+  min-height: 158px;
   button{
     color: #fff;
     font-family: "HelveticaNeueCyr";
