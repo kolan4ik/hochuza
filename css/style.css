@@ -303,6 +303,7 @@ strong {
 .login-form-item .bt-dropdown-options {
   width: 100%;
   top: 41px;
+  overflow: hidden;
 }
 
 form {
