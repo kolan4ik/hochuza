@@ -2491,14 +2491,20 @@ input[type="number"]:after {
 }
 .orders-data li {
   float: left;
+  width: 28%;
   height: 22px;
   line-height: 22px;
-  margin: 0 0 0 57px;
-  font-size: 14px;
+  font-size: 13px;
   color: #656565;
 }
 .orders-data li:first-child {
   margin: 0;
+  width: 23%;
+}
+.orders-data li:last-child {
+  float: right;
+  width: auto;
+  margin: 0 0 0 -20px;
 }
 .orders-data li .icon-location {
   font-size: 22px;
@@ -3491,6 +3497,12 @@ input[type="email"] {
   thead td:first-child {
     width: 180px;
   }
+
+  .orders-data li {
+    float: left;
+    width: 50% !important;
+    margin: 0 0 5px;
+  }
 }
 @media screen and (max-width: 899px) {
   .small-text,
@@ -3517,11 +3529,6 @@ input[type="email"] {
   .box-right,
   .box-right-button {
     text-align: center;
-  }
-
-  .orders-data li {
-    width: 50%;
-    margin: 0 0 5px !important;
   }
 
   .link-cabinet {
@@ -3623,7 +3630,7 @@ input[type="email"] {
 
   .orders-data li {
     width: 50%;
-    margin: 0 0 5px !important;
+    margin: 0 0 5px;
   }
 
   .link-cabinet {
@@ -4015,6 +4022,10 @@ input[type="email"] {
   .content-menu .preview-gallery a, .content-menu .add-photo {
     width: 16.5%;
   }
+
+  .orders-data li {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 560px) {
   .header {
@@ -4230,7 +4241,11 @@ input[type="email"] {
   }
 
   .box-right-button button {
+    position: relative;
     margin-top: 0;
+  }
+  .box-right-button button:last-child {
+    top: 1px;
   }
 
   .orders-tags li {
@@ -4288,6 +4303,10 @@ input[type="email"] {
   .footer-nav-menu {
     margin-top: 10px;
   }
+
+  .notification-success, .notification-error {
+    margin-bottom: 10px !important;
+  }
 }
 @media screen and (max-width: 480px) {
   .open-more-text {
@@ -4300,7 +4319,7 @@ input[type="email"] {
   }
 }
 @media screen and (max-width: 440px) {
-  .open-more-text {
-    width: 60%;
+  .orders-data {
+    margin: 0 -30px 0;
   }
 }

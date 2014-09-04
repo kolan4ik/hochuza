@@ -1445,13 +1445,19 @@ input[type="number"]{
   overflow: hidden;
   li{
     float: left;
+    width: 28%;
     height: 22px;
     line-height: 22px;
-    margin: 0 0 0 57px;
-    font-size: 14px;
+    font-size: 13px;
     color: #656565;
     &:first-child{
       margin: 0;
+      width: 23%;
+    }
+    &:last-child{
+      float: right;
+      width: auto;
+      margin: 0 0 0 -20px;
     }
     .icon-location{
       font-size: 22px;
