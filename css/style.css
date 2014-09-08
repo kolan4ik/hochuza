@@ -1164,7 +1164,7 @@ h4 {
   position: relative;
 }
 
-.product-info, .profile-user {
+.product-info, .profile-user, .offer-page {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
@@ -1178,13 +1178,13 @@ h4 {
   box-sizing: border-box;
   overflow: hidden;
 }
-.product-info h2, .profile-user h2 {
+.product-info h2, .profile-user h2, .offer-page h2 {
   margin: 0 0 26px;
 }
-.product-info .checkBox, .profile-user .checkBox {
+.product-info .checkBox, .profile-user .checkBox, .offer-page .checkBox {
   margin-bottom: 37px;
 }
-.product-info .btn, .profile-user .btn {
+.product-info .btn, .profile-user .btn, .offer-page .btn {
   padding: 0 34px;
 }
 
@@ -3117,6 +3117,138 @@ input[type="number"]:after {
   min-height: 100%;
 }
 
+.offer-page {
+  padding: 30px 88px 38px;
+}
+
+.offer-left {
+  float: left;
+  width: 375px;
+}
+
+.offer-preview {
+  overflow: hidden;
+}
+
+.offer-preview-list {
+  width: 203px;
+  margin: 0 -1px 0 0;
+  float: left;
+  overflow: hidden;
+}
+.offer-preview-list li {
+  float: left;
+  margin: 0 5px 5px 0;
+}
+.offer-preview-list img {
+  width: 91px;
+  height: 91px;
+}
+
+.offer-top {
+  background: #eeeeee;
+  overflow: hidden;
+  padding: 15px;
+  margin: 0 0 10px;
+}
+
+.about-offer {
+  overflow: hidden;
+}
+.about-offer p {
+  color: #5f5f5f;
+  font-family: "HelveticaNeueCyr";
+  font-size: 18px;
+}
+.about-offer ul {
+  border-bottom: 1px solid #cbcbcb;
+  margin: 0 0 15px;
+  padding: 0 0 6px;
+}
+.about-offer li {
+  color: #5f5f5f;
+  font-family: "HelveticaNeueCyr";
+  font-size: 14px;
+  line-height: 21px;
+}
+.about-offer button {
+  height: 50px;
+  width: 143px;
+  padding: 0 !important;
+  font-size: 12px;
+}
+.about-offer button i {
+  margin: -6px 10px 0 0;
+}
+
+.title-offer {
+  margin: 0 0 15px;
+}
+
+.offer-text {
+  overflow: hidden;
+  clear: both;
+}
+.offer-text a {
+  color: #00ad9d;
+  font-family: "HelveticaNeueCyr";
+  font-size: 14px;
+  text-decoration: underline;
+  margin: 0 0 10px;
+  display: inline-block;
+}
+.offer-text a:hover {
+  text-decoration: none;
+}
+.offer-text p {
+  line-height: 21px;
+  color: #5f5f5f;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.offer-list {
+  float: right;
+  width: 442px;
+}
+.offer-list li {
+  padding: 15px 0 12px 14px;
+  display: table;
+}
+.offer-list li:nth-child(odd) {
+  background: #eeeeee;
+}
+.offer-list a {
+  line-height: normal;
+  height: 78px;
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  color: #5f5f5f;
+  font-family: "HelveticaNeueCyr";
+  font-size: 24px;
+  text-decoration: none;
+  padding: 0 0 0 89px;
+  position: relative;
+  z-index: 10;
+}
+.offer-list a:after {
+  position: absolute;
+  right: 15px;
+  height: 100%;
+  width: 1px;
+  background: #d3d3d3;
+  top: 0;
+  content: "";
+  display: inline-block;
+}
+.offer-list img {
+  float: left;
+  height: 78px;
+  width: 78px;
+  margin: 0 -78px 0 0;
+}
+
 /***************************************************/
 /*      footer
 /***************************************************/
@@ -3432,6 +3564,7 @@ input[type="email"] {
   .orders-page,
   .product-info,
   .profile-user,
+  .offer-page,
   .popup,
   .profile-user {
     padding-left: 7% !important;
@@ -3446,6 +3579,7 @@ input[type="email"] {
   .orders-page,
   .product-info,
   .profile-user,
+  .offer-page,
   .popup,
   .profile-user {
     padding-left: 4% !important;
@@ -3488,6 +3622,7 @@ input[type="email"] {
   .orders-page,
   .product-info,
   .profile-user,
+  .offer-page,
   .popup,
   .profile-user {
     padding-left: 2% !important;
@@ -3506,6 +3641,7 @@ input[type="email"] {
   .orders-page,
   .product-info,
   .profile-user,
+  .offer-page,
   .popup,
   .profile-user {
     padding-left: 5px !important;
