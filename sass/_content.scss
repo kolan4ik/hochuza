@@ -2131,6 +2131,10 @@ input[type="number"]{
     }
   }
 }
+.offer-in{
+  overflow: hidden;
+  width: 100%;
+}
 .title-offer{
   margin: 0 0 15px;
 }
@@ -2161,6 +2165,19 @@ input[type="number"]{
   li{
     padding: 15px 0 12px 14px;
     display: table;
+    width: 100%;
+    position: relative;
+    &:after{
+      position: absolute;
+      right: 30px;
+      height: 77px;
+      width: 1px;
+      background: #d3d3d3;
+      top: 15px;
+      margin-bottom: 15px;
+      content: "";
+      display: inline-block;
+    }
     &:nth-child(odd){
       background: #eeeeee;
     }
@@ -2178,16 +2195,7 @@ input[type="number"]{
     padding: 0 0 0 89px;
     position: relative;
     z-index: 10;
-    &:after{
-      position: absolute;
-      right: 15px;
-      height: 100%;
-      width: 1px;
-      background: #d3d3d3;
-      top: 0;
-      content: "";
-      display: inline-block;
-    }
+
   }
   img{
     float: left;

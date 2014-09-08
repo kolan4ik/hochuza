@@ -392,11 +392,6 @@ html {
   height: 100%;
 }
 
-html, body {
-  height: 100%;
-  position: relative;
-}
-
 body {
   font-family: "HelveticaNeueCyr";
   height: 100%;
@@ -3181,6 +3176,11 @@ input[type="number"]:after {
   margin: -6px 10px 0 0;
 }
 
+.offer-in {
+  overflow: hidden;
+  width: 100%;
+}
+
 .title-offer {
   margin: 0 0 15px;
 }
@@ -3214,6 +3214,19 @@ input[type="number"]:after {
 .offer-list li {
   padding: 15px 0 12px 14px;
   display: table;
+  width: 100%;
+  position: relative;
+}
+.offer-list li:after {
+  position: absolute;
+  right: 30px;
+  height: 77px;
+  width: 1px;
+  background: #d3d3d3;
+  top: 15px;
+  margin-bottom: 15px;
+  content: "";
+  display: inline-block;
 }
 .offer-list li:nth-child(odd) {
   background: #eeeeee;
@@ -3231,16 +3244,6 @@ input[type="number"]:after {
   padding: 0 0 0 89px;
   position: relative;
   z-index: 10;
-}
-.offer-list a:after {
-  position: absolute;
-  right: 15px;
-  height: 100%;
-  width: 1px;
-  background: #d3d3d3;
-  top: 0;
-  content: "";
-  display: inline-block;
 }
 .offer-list img {
   float: left;
@@ -3713,6 +3716,10 @@ input[type="email"] {
   .content-menu li a {
     padding: 0 172px 7px;
   }
+
+  .offer-list {
+    width: 400px;
+  }
 }
 @media screen and (max-width: 845px) {
   .small-text,
@@ -3817,6 +3824,46 @@ input[type="email"] {
   .balance-info button {
     float: none !important;
   }
+
+  .offer-preview-list {
+    width: auto;
+  }
+  .offer-preview-list li {
+    margin-right: 7px;
+    width: 23%;
+  }
+  .offer-preview-list li:last-child {
+    margin-right: 0;
+  }
+  .offer-preview-list img {
+    width: 100%;
+  }
+
+  .about-offer {
+    clear: both;
+  }
+  .about-offer ul {
+    overflow: hidden;
+  }
+  .about-offer li {
+    float: left;
+    width: 50%;
+  }
+  .about-offer button {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .offer-list {
+    width: 380px;
+  }
+  .offer-list a {
+    font-size: 22px;
+  }
+
+  .offer-left {
+    width: 320px;
+  }
 }
 @media screen and (max-width: 782px) {
   .small-text,
@@ -3883,6 +3930,22 @@ input[type="email"] {
   }
   .add-cash:after {
     display: none !important;
+  }
+
+  .offer-preview > div {
+    float: none;
+    width: 100%;
+    margin: 0 0 15px;
+  }
+
+  .offer-preview-list {
+    width: 400px;
+    margin: 0 auto;
+    float: none;
+    display: block;
+  }
+  .offer-preview-list li {
+    width: 91px;
   }
 }
 @media screen and (max-width: 719px) {
