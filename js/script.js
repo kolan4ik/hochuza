@@ -2,6 +2,8 @@ $(document).ready(function(){
     var $hText = $('.orders-text p').outerHeight(),
         test = document.createElement('input');
     $('.orders-text > p').height(139);
+    $('.screen-landing').height($(window).height());
+
     if ($.fn.checkBox !== undefined ) {
         $('.checkbox-item').checkBox();
     }
@@ -49,7 +51,11 @@ $(document).ready(function(){
         $(this).siblings('div.bt-checkbox').children('a').click();
     });
     $('.popup-overlay, .back, .close-popup').on('click',function(){
-        $('.popup-overlay, .size-popup, .popup, .pass-popup, .popup-tel').fadeOut();
+        $('.popup-overlay, .size-popup, .popup, .pass-popup, .popup-tel, .payment-methods').fadeOut();
+        return false
+    });
+    $('.btn-yes').on('click', function(){
+        $('.popup-overlay, .size-popup, .payment-methods').fadeIn();
         return false
     });
     $('.icon-trash-o').on('click',function(){

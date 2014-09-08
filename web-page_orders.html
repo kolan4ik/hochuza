@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/glDatePicker.default.css">
+    <script>document.write('<script src="http://'
+                    + (location.host || 'localhost').split(':')[0]
+                    + ':35729/livereload.js"></'
+                    + 'script>')</script>
 </head>
 <body>
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
@@ -213,6 +217,24 @@
                 <span class="footer-img man"></span>
             </article>
         </footer>
+
+        <div class="size-popup">
+            <div class="popup-wrap">
+                <div class="popup__in">
+                    <div class="payment-methods">
+                        <a class="close-popup" href="#"></a>
+                        <h2>Способ оплаты</h2>
+                        <p>Пожалуйста, <br />
+                            выберите удобный для Вас <br/>
+                            способ оплаты:</p>
+                        <button class="btn btn-green">выписать счёт</button>
+                        <button class="btn btn-green">оплатить картой</button>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-overlay"></div>
+        </div>
+
     </div>
 </div>
 

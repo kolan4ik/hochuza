@@ -6,7 +6,13 @@
   padding: 167px 0 90px 0;
   @include box-sizing(border-box);
 }
-
+.content-landing{
+  @extend .content;
+  display: block;
+    height: 100%;
+  position: relative;
+  padding: 0 !important;
+}
 .scroller{
   display: table;
   width: 100% !important;
@@ -21,6 +27,7 @@
   display: table;
   background: #f3f3f3;
 }
+
 .big-search{
   max-width: 687px;
   width: 100%;
@@ -911,7 +918,7 @@
   font-family: "HelveticaNeueCyr";
   font-size: 16px;
   @include icon-sprite(arr-bottom);
-  background-position: 143% -895px;
+  background-position: 143% -83px;
   background-color: #fafafa;
   display: block;
   width: 160px;
@@ -925,7 +932,7 @@
   &.active{
     @include icon-sprite(arr-top-active);
     margin-bottom: 0;
-    background-position: 143% -921px;
+    background-position: 143% -109px;
     font-size: 0;
     color: transparent;
     span{
@@ -1113,11 +1120,13 @@ input[type="number"]{
     right: 21px;
     top: 14px;
     cursor: pointer;
+    background-color: transparent;
   }
 }
 #tags_1_tagsinput{
   width: 341px !important;
   height: auto !important;
+  min-height: 53px;
   border: 1px solid #ebebeb;
   background-color: #fff;
   padding: 13px 44px 7px 13px;
@@ -1145,7 +1154,7 @@ input[type="number"]{
   a{
     float: left;
     @include icon-sprite(tags-icon);
-    background-position: 6px -712px;
+    background-position: 6px -850px;
     background-color: #fafafa;
     display: inline-block;
     font-size: 0;
@@ -1158,6 +1167,7 @@ input[type="number"]{
 }
 #tags_1_addTag{
   float: left;
+  margin: 0 -5px 0 0;
   width: 66px;
   input{
     border: none;
@@ -1293,6 +1303,9 @@ input[type="number"]{
     font-size: 16px;
     text-align: center;
     margin: 0 0 9px;
+  }
+  .btn-buy{
+    width: 126px;
   }
 }
 .box-right-button{
@@ -2051,4 +2064,11 @@ input[type="number"]{
   border-radius: 50%;
   width: 40px;
   height: 40px;
+}
+.screen-landing{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  min-height: 100%;
 }

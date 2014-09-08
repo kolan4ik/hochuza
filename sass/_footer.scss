@@ -7,7 +7,7 @@
   width: 100%;
   .wrapper{
     @include box-sizing(border-box);
-    max-width: 475px;
+    max-width: 555px;
   }
   ul{
     overflow: hidden;
@@ -191,11 +191,10 @@
   background-color: #a9a9a9;
   @include icon-sprite(back-icon);
   @include box-shadow(inset 0 -3px 0 rgba(0,0,0,.21));
-  background-position:  20px -435px;
+  background-position:  20px -148px;
   &:hover{
     box-shadow: none;
   }
-
 }
 .btn-group{
   padding: 46px 0 0;
@@ -215,6 +214,27 @@
   box-shadow: none;
 
 }
+.payment-methods{
+  text-align: center;
+  @extend .recover-password;
+  position: relative;
+  z-index: 30;
+  box-shadow: none;
+  padding-bottom: 43px;
+  button{
+    width: 230px;
+    margin: 0 auto 20px;
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    padding: 0;
+  }
+  p{
+    color: #5d5d5d;
+    font-size: 20px;
+  }
+}
+
 .close-popup{
   display: inline-block;
   position: absolute;
@@ -589,6 +609,16 @@ input[type="email"]{
     }
   }
 }
+@media screen and (max-width: 700px) {
+  .big-search{
+    button{
+      float: right;
+    }
+    input{
+      margin: 0;
+    }
+  }
+}
 @media screen and (max-width: 684px) {
   .select-box{
     text-align: center;
@@ -659,6 +689,17 @@ input[type="email"]{
     font-size: 17px;
     &:first-child{
       width: 221px;
+    }
+  }
+  .big-search{
+    text-align: center;
+    button{
+      float: none;
+    }
+    input{
+      max-width: auto;
+      width: 90%;
+      margin: 0 0 15px;
     }
   }
 }
@@ -933,9 +974,10 @@ input[type="email"]{
     width: 80%;
   }
   .man{
-    @extend .slippers;
-  }
-  .slippers{
+    background: url("../images/slippers.png") no-repeat;
+    width: 124px;
+    height: 60px;
+    display: inline-block;
     top: -56px;
   }
   .form-item{
