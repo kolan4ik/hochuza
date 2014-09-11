@@ -2202,7 +2202,6 @@ input[type="number"]:after {
 
 .content-menu {
     padding: 25px 0 27px;
-    overflow: hidden;
     clear: both;
     position: relative;
 }
@@ -2234,22 +2233,19 @@ input[type="number"]:after {
     color: #00ad9d;
     font-family: "HelveticaNeueCyr";
     font-size: 18px;
-    border-bottom: 2px solid #00ae9d;
 }
 #magic-line {
     position: absolute;
-    bottom: 3px;
+    bottom: 0;
     left: 0;
     width: 100px;
     height: 2px;
     background: #00ae9d;
 }
-.content-menu li:first-child {
-    margin: 0 0 0 5px;
-}
+
 .content-menu li {
     display: inline-block;
-    margin: 0 0 0 -6px;
+    float: left;
 }
 .orders-item {
     border-bottom: 2px solid #d5d5d5;
@@ -3776,7 +3772,7 @@ input[type="email"] {
     }
 
     .content-menu li a {
-        padding: 0 172px 7px;
+        padding: 0 164px 7px;
     }
 }
 @media screen and (max-width: 845px) {
@@ -3790,7 +3786,7 @@ input[type="email"] {
     }
 
     .content-menu li a {
-        padding: 0 162px 7px;
+        padding: 0 138px 7px;
     }
 }
 @media screen and (max-width: 819px) {
@@ -3800,7 +3796,7 @@ input[type="email"] {
     }
 
     .content-menu li a {
-        padding: 0 155px 7px;
+        padding: 0 135px 7px;
     }
 
     thead td:first-child {
@@ -4254,6 +4250,7 @@ input[type="email"] {
         float: none;
         text-align: center;
         padding: 5px 0;
+        width: 100%;
     }
     .content-menu li a {
         width: 100%;
@@ -4261,7 +4258,13 @@ input[type="email"] {
     .content-menu .preview-gallery a, .content-menu .add-photo {
         width: 16.5%;
     }
+    #magic-line{
+        display: none;
+    }
+    .content-menu .active a {
+        border-bottom: 2px solid #00ae9d;
 
+    }
     .orders-data li {
         font-size: 12px;
     }
@@ -4572,6 +4575,7 @@ input[type="email"] {
 }
 .content-menu ul{
     position: relative;
+
 }
 
 
