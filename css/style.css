@@ -377,8 +377,11 @@ tbody {
     box-sizing: border-box;
 }
 tbody tr {
-    background: #f3f3f3 !important;
+    background: #f9f9f9 !important;
     height: 52px;
+}
+#LoginForm_captionError{
+    border-right: none;
 }
 tbody tr:nth-child(even) {
     background: #eeeeee !important;
@@ -1660,7 +1663,7 @@ h4 {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0 0 0 43px;
-    margin: 7px 0 0;
+    margin: 9px 0 0;
     float: left;
     display: inline-block;
     background-position: 0 -730px;
@@ -1816,7 +1819,7 @@ h4 {
 
 .content-tel {
     float: right;
-    margin: 0 0 30px;
+    margin: 5px 0 23px;
 }
 .content-tel input[readonly="readonly"],
 .content-tel input[readonly=""] {
@@ -1835,16 +1838,17 @@ h4 {
     margin: 0 0 0 13px;
 }
 .content-tel .icon-mobile {
-    font-size: 35px;
+    font-size: 40px;
     float: left;
     color: #aaa;
-    margin-top: 3px !important;
+    margin-top: 7px !important;
+    margin-right: 30px;
 }
 .content-tel .icon-pencil {
     color: #00ae9d;
     font-size: 23px;
     background: none;
-    margin: 0 -8px 0 0;
+    margin: 0 -8px 0 -26px;
     top: 0;
     box-shadow: none;
 }
@@ -1893,6 +1897,7 @@ div.gldp-default .monyear.title{
     display: inline-block;
     position: absolute;
     bottom: -7px;
+    margin-left: -3px;
     left: 50%;
     border-top: 7px solid #d5d5d5;
     border-left: 7px solid transparent;
@@ -1967,7 +1972,7 @@ div.gldp-default .monyear.title{
 .datepicker {
     position: relative;
     overflow: hidden;
-    padding: 22px 0 0 3px;
+    padding: 23px 0 0 5px;
     z-index: 2;
 }
 .datepicker p {
