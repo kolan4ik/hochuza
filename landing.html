@@ -13,10 +13,7 @@
     <link rel="stylesheet" href="css/landing.css">
     <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/glDatePicker.default.css">
-    <script>document.write('<script src="http://'
-            + (location.host || 'localhost').split(':')[0]
-            + ':35729/livereload.js"></'
-            + 'script>')</script>
+
 </head>
 <body>
 <div class="container">
@@ -37,7 +34,7 @@
         </ul>
     </nav>
     <div class="site-overlay"></div>
-    <div class="scroller">
+    <div class="scroller small-screen">
         <div class="landing-wrapper">
             <header class="header">
                 <article class="wrapper">
@@ -46,126 +43,136 @@
                     <a class="logo" href="web-page_main.html"></a>
                 </article>
             </header>
-            <div class="main">
-                <section  class="page1">
-                    <div class="page_container">
-                        <h2>Сервис, <br />
-                            ускоряющий поиски нужного товара или услуги!</h2>
-                        <div class="big-search">
-                            <form action="">
-                                <input type="text" placeholder="Я ХОЧУ...">
-                                <button class="btn btn-red" type="submit">купить!</button>
-                            </form>
-                        </div>
-                    </div>
-                    <span class="scroll-img"></span>
-                </section>
-                <section class="page2">
-                    <div class="page_container">
-                        <h2>Устали от бесконечно долгого выбора?..</h2>
-                        <span class="scroll-img"></span>
-                        <div class="question">
-                            <ul>
-                                <li>Наличие?..</li>
-                                <li>Цена?..</li>
-                                <li>Доставка?..</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <span class="scroll-img"></span>
-                </section>
-                <section class="page3">
-                    <div class="page_container tac">
-                        <h2>Просто опишите свои пожелания — <br/>  мы передадим заявку продавцам!</h2>
-                        <div class="exenple-form">
-                            <div class="choice-product">
-                                <h4>Я хочу...</h4>
-                                <p class="small-text">
-                                    <i>П</i>
-                                    <i>л</i>
-                                    <i>а</i>
-                                    <i>н</i>
-                                    <i>ш</i>
-                                    <i>е</i>
-                                    <i>т</i>
-                                    <i>,</i>
-                                    <i>&nbsp;1</i>
-                                    <i>0</i>
-                                    <i>&nbsp;д</i>
-                                    <i>ю</i>
-                                    <i>й</i>
-                                    <i>м</i>
-                                    <i>о</i>
-                                    <i>в</i>
-                                    <i>,</i>
-                                    <i>&nbsp;ч</i>
-                                    <i>е</i>
-                                    <i>р</i>
-                                    <i>н</i>
-                                    <i>ы</i>
-                                    <i>й</i>
-                                    <i>&nbsp;ц</i>
-                                    <i>в</i>
-                                </p>
-                                <div class="cash">
-                                    <span>до</span>
-                                    <p>
-                                        <i>8</i>
-                                        <i>0</i>
-                                        <i>0</i>
-                                        <i>0</i>
-                                    </p>
-                                    <span>грн</span>
-                                </div>
-                                <button class="btn btn-red">подтвердить</button>
+                <div class="main big-screen-in">
+                    <section  class="page1">
+                        <div class="page_container">
+                            <h2>Сервис, <br />
+                                ускоряющий поиски нужного товара или услуги!</h2>
+                            <div class="big-search">
+                                <form action="">
+                                    <input type="text" placeholder="Я ХОЧУ...">
+                                    <button class="btn btn-red" type="submit">купить!</button>
+                                </form>
                             </div>
                         </div>
-                    </div>
-                    <img src="images/page4-bg.png" alt=""/>
-                    <span class="scroll-img"></span>
-
-                </section>
-                <section class="page4">
-                    <div class="page_container">
-                        <h2>Вам остаётся лишь выбрать предложение по душе — <br/>
-                            быстро и легко!</h2>
-
-                        <div class="pedestal">
-                            <ul>
-                                <li class="pedestal2">
-                                    <span><img src="images/planshet.png" alt=""/></span>
-                                    <p>7600 грн</p>
-                                </li>
-                                <li class="pedestal1">
-                                    <span><img src="images/planshet.png" alt=""/></span>
-                                    <p>7100 грн</p>
-                                </li>
-                                <li class="pedestal3">
-                                    <span><img src="images/planshet.png" alt=""/></span>
-                                    <p>8000 грн</p>
-                                </li>
-                            </ul>
+                        <span class="scroll-img"></span>
+                    </section>
+                    <section class="page2">
+                        <div class="page_container">
+                            <h2>Устали от бесконечно долгого выбора?..</h2>
+                            <span class="scroll-img"></span>
+                            <div class="question">
+                                <ul>
+                                    <li>Наличие?..</li>
+                                    <li>Цена?..</li>
+                                    <li>Доставка?..</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <span class="scroll-img"></span>
+                        <span class="scroll-img"></span>
+                    </section>
+                    <section class="page3">
+                        <div class="page_container tac">
+                            <h2>Просто опишите свои пожелания — <br/>  мы передадим заявку продавцам!</h2>
+                            <div class="exenple-form">
+                                <div class="choice-product">
+                                    <h4>Я хочу...</h4>
+                                    <p class="small-text">
+                                        <i>П</i>
+                                        <i>л</i>
+                                        <i>а</i>
+                                        <i>н</i>
+                                        <i>ш</i>
+                                        <i>е</i>
+                                        <i>т</i>
+                                        <i>,</i>
+                                        <i>&nbsp;1</i>
+                                        <i>0</i>
+                                        <i>&nbsp;д</i>
+                                        <i>ю</i>
+                                        <i>й</i>
+                                        <i>м</i>
+                                        <i>о</i>
+                                        <i>в</i>
+                                        <i>,</i>
+                                        <i>&nbsp;ч</i>
+                                        <i>е</i>
+                                        <i>р</i>
+                                        <i>н</i>
+                                        <i>ы</i>
+                                        <i>й</i>
+                                        <i>&nbsp;ц</i>
+                                        <i>в</i>
+                                    </p>
+                                    <div class="cash">
+                                        <span>до</span>
+                                        <p>
+                                            <i>8</i>
+                                            <i>0</i>
+                                            <i>0</i>
+                                            <i>0</i>
+                                        </p>
+                                        <span>грн</span>
+                                    </div>
+                                    <button class="btn btn-red">подтвердить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="images/page4-bg.png" alt=""/>
+                        <span class="scroll-img"></span>
 
-                </section>
-                <section class="page5">
-                    <div class="page_container">
-                        <h2>Выбирать ещё не было так просто! <br/>
-                            Предоставьте поиски товара или услуг нам, <br/>
-                            а сами займитесь любимыми делами!</h2>
+                    </section>
+                    <section class="page4">
+                        <div class="page_container">
+                            <h2>Вам остаётся лишь выбрать предложение по душе — <br/>
+                                быстро и легко!</h2>
+
+                            <div class="pedestal">
+                                <ul>
+                                    <li class="pedestal2">
+                                        <span><img src="images/planshet.png" alt=""/></span>
+                                        <p>7600 грн</p>
+                                    </li>
+                                    <li class="pedestal1">
+                                        <span><img src="images/planshet.png" alt=""/></span>
+                                        <p>7100 грн</p>
+                                    </li>
+                                    <li class="pedestal3">
+                                        <span><img src="images/planshet.png" alt=""/></span>
+                                        <p>8000 грн</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <span class="scroll-img"></span>
+
+                    </section>
+                    <section class="page5">
+                        <div class="page_container">
+                            <h2>Выбирать ещё не было так просто! <br/>
+                                Предоставьте поиски товара или услуг нам, <br/>
+                                а сами займитесь любимыми делами!</h2>
+                            <div class="big-search">
+                                <form action="">
+                                    <input type="text" placeholder="Я ХОЧУ...">
+                                    <button class="btn btn-red" type="submit">купить!</button>
+                                </form>
+                            </div>
+                        </div>
+                        <img class="rotate-img" src="images/planshet.png" alt=""/>
+                    </section>
+
+                </div>
+                <div class="content small-screen-in">
+                    <article class="wrapper">
                         <div class="big-search">
                             <form action="">
                                 <input type="text" placeholder="Я ХОЧУ...">
-                                <button class="btn btn-red" type="submit">купить!</button>
+                                <button type="submit" class="btn btn-red">купить!</button>
                             </form>
                         </div>
-                    </div>
-                    <img class="rotate-img" src="images/planshet.png" alt=""/>
-                </section>
-
-            </div>
+                    </article>
+                </div>
             <footer class="footer">
                 <div class="wrap-men">
                     <span class="man-move"></span>

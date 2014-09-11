@@ -6,7 +6,8 @@ $(document).ready(function(){
 
     onePageScroll(".main", {
         sectionContainer: "section",
-        loop: true,
+        loop: false,
+        pagination: false,
         responsiveFallback: false
     });
 
@@ -245,6 +246,15 @@ $( window ).resize(function() {
         $('.man').addClass('slippers');
         $('.man').removeClass('man');
     }
+});
+$(window).on('resize load',function(){
+   if($(window).width() <= 1024 ){
+       $('.scroller ').addClass('small-screen ')
+   }
+    else{
+       $('.scroller ').removeClass('small-screen ')
+
+   }
 });
 
 

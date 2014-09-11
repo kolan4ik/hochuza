@@ -7978,7 +7978,7 @@ h4 {
 /* line 16, ../sass/_content.scss */
 .scroller {
   display: block !important;
-  min-height: auto !important;
+    min-height: auto !important;
   height: 100%;
 }
 
@@ -8038,7 +8038,22 @@ h4 {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+.small-screen .big-screen-in{
+    display: none;
+}
+.small-screen .man-move{
+    display: none;
+}
+.small-screen .landing-wrapper{
+    overflow: visible;
+    display: table;
+}
+.small-screen .small-screen-in{
+    display: table-cell;
+}
+.small-screen-in{
+    display: none;
+}
 /***************************************************/
 /*      footer
 /***************************************************/
@@ -8079,6 +8094,7 @@ h4 {
   float: left;
   width: 100%;
   margin: 0 auto;
+    position: relative;
 }
 
 /* line 33, ../sass/_footer.scss */
@@ -8174,8 +8190,29 @@ h4 {
   left: 50%;
   margin-left: -525px;
   bottom: -127px;
+    opacity: 0.5;
 }
 /* line 96, ../sass/_footer.scss */
+.page3.active  > img {
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    opacity: 1;
+}
+.page3.active  button {
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    font-weight: 700;
+    -webkit-transition-delay: 1.2s;
+    -moz-transition-delay: 1.2s;
+    -o-transition-delay: 1.2s;
+    transition-delay: 1.2s;
+    box-shadow: none;
+}
+
 .page3 .cash i {
   opacity: 0;
   -webkit-transition-duration: 0s;
@@ -8693,13 +8730,14 @@ h4 {
 /* line 118, ../sass/_footer.scss */
 .page5 {
   position: relative;
+    overflow: hidden;
 }
 /* line 121, ../sass/_footer.scss */
 .page5.active .rotate-img {
   -ms-transform: scale(0.5) rotate(250deg);
   -webkit-transform: scale(0.5) rotate(250deg);
   transform: scale(0.5) rotate(250deg);
-  bottom: 15%;
+  bottom: -20%;
 }
 
 /* line 133, ../sass/_footer.scss */
@@ -8964,7 +9002,7 @@ h4 {
 
 /* line 333, ../sass/_footer.scss */
 .man-move {
-  background: url("../images/men.png");
+  background: url("../images/men.png") no-repeat;
   width: 142px;
   height: 207px;
   position: absolute;
@@ -8975,6 +9013,10 @@ h4 {
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
+    -webkit-transition-property: left;
+    -moz-transition-property: left;
+    -o-transition-property: left;
+    transition-property: left;
 }
 /* line 342, ../sass/_footer.scss */
 .man-move.big {
@@ -8992,14 +9034,17 @@ h4 {
 .viewing-page-2 .man-move {
   left: 50%;
   margin-left: -71px;
-  background: url("../images/sad-men.png");
+  background: url("../images/sad-men.png") no-repeat;
 }
 
 /* line 360, ../sass/_footer.scss */
 .viewing-page-3 .man-move {
   left: 100%;
   margin-left: -142px;
-  background: url("../images/men.png");
+  background: url("../images/men.png") no-repeat;
+}
+.viewing-page-5 .main{
+    z-index: 8;
 }
 
 /* line 368, ../sass/_footer.scss */
@@ -9007,7 +9052,7 @@ h4 {
 .viewing-page-4 .man-move {
   left: 50%;
   margin-left: -71px;
-  background: url("../images/men.png");
+  background: url("../images/men.png") no-repeat;
 }
 
 /* line 375, ../sass/_footer.scss */
@@ -9016,7 +9061,7 @@ h4 {
   -moz-transition-duration: 2s;
   -o-transition-duration: 2s;
   transition-duration: 2s;
-  background: url("../images/men-planshet.png");
+  background: url("../images/men-planshet.png") no-repeat;
   width: 210px;
   height: 297px;
   margin-left: -103px;
@@ -9024,10 +9069,10 @@ h4 {
 
 /* line 383, ../sass/_footer.scss */
 .rotate-img {
-  -webkit-transition-duration: 2s;
-  -moz-transition-duration: 2s;
-  -o-transition-duration: 2s;
-  transition-duration: 2s;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
   position: absolute;
   bottom: 150%;
   left: 50%;
