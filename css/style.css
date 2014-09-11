@@ -1576,7 +1576,7 @@ h4 {
 
 .preview-product {
     overflow: hidden;
-    margin: 0 0 21px;
+    margin: 0 0 26px;
 }
 .preview-product p {
     line-height: 24px;
@@ -1848,14 +1848,16 @@ h4 {
     color: #00ae9d;
     font-size: 23px;
     background: none;
-    margin: 0 -8px 0 -26px;
+    margin: 0 0 0 23px;
     top: 0;
     box-shadow: none;
 }
 .content-tel .icon-pencil:after {
     display: none;
 }
-
+.content-tel input{
+     width: 155px;
+}
 .icon-pencil {
     width: 24px;
     height: 24px;
