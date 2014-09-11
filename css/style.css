@@ -2204,18 +2204,20 @@ input[type="number"]:after {
     padding: 25px 0 27px;
     overflow: hidden;
     clear: both;
-}
-.content-menu li {
-    float: left;
+    position: relative;
 }
 .content-menu li:first-child a {
     padding: 0 84px 7px;
 }
-.content-menu li:last-child a {
+.content-menu li:nth-child(3) a {
     padding: 0 51px 7px;
+}
+.content-menu li a:hover {
+    color: #00ad9d;
 }
 .content-menu li a {
     display: inline-block;
+    float: left;
     width: 100%;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2227,14 +2229,6 @@ input[type="number"]:after {
     text-transform: uppercase;
     text-decoration: none;
     border-bottom: 2px solid #d5d5d5;
-    -webkit-transition:  1s; /* For Safari 3.1 to 6.0 */
-    transition:  1s;
-}
-.content-menu li a:hover {
-    color: #00ad9d;
-    font-family: "HelveticaNeueCyr";
-    font-size: 18px;
-    border-bottom: 2px solid #00ae9d;
 }
 .content-menu .active a {
     color: #00ad9d;
@@ -2242,7 +2236,21 @@ input[type="number"]:after {
     font-size: 18px;
     border-bottom: 2px solid #00ae9d;
 }
-
+#magic-line {
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    width: 100px;
+    height: 2px;
+    background: #00ae9d;
+}
+.content-menu li:first-child {
+    margin: 0 0 0 5px;
+}
+.content-menu li {
+    display: inline-block;
+    margin: 0 0 0 -6px;
+}
 .orders-item {
     border-bottom: 2px solid #d5d5d5;
     margin: 0 0 19px;
@@ -4562,3 +4570,11 @@ input[type="email"] {
         margin: 0 -30px 0;
     }
 }
+.content-menu ul{
+    position: relative;
+}
+
+
+
+
+
