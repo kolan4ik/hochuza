@@ -4575,6 +4575,7 @@ input[type="email"] {
 }
 .content-menu ul{
     position: relative;
+    overflow: hidden;
 
 }
 
