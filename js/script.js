@@ -1,10 +1,18 @@
 $(document).ready(function(){
     var $hText = $('.orders-text p').outerHeight(),
         test = document.createElement('input');
-
     $('.orders-text > p').height(139);
     $('.screen-landing').height($(window).height());
 
+    onePageScroll(".main", {
+        sectionContainer: "section",
+        loop: true,
+        responsiveFallback: false
+    });
+
+    if($('.page2').hasClass('active')){
+        alert('1')
+    }
 
     if ($.fn.checkBox !== undefined ) {
         $('.checkbox-item').checkBox();
@@ -222,32 +230,6 @@ $(document).ready(function(){
         });
     }
 
-    $(".content-menu ul").append("<li id='magic-line'></li>");
-
-    /* Cache it */
-    var $magicLine = $("#magic-line");
-
-    $magicLine
-        .width($(".active").width())
-        .css("left", $(".active a").position().left)
-        .data("origLeft", $magicLine.position().left)
-        .data("origWidth", $magicLine.width());
-
-    $(".content-menu ul li").find("a").hover(function() {
-        $el = $(this);
-        leftPos = $el.position().left;
-        newWidth = $el.parent().width();
-
-        $magicLine.stop().animate({
-            left: leftPos,
-            width: newWidth
-        });
-    }, function() {
-        $magicLine.stop().animate({
-            left: $magicLine.data("origLeft"),
-            width: $magicLine.data("origWidth")
-        });
-    });
 
 });
 $( window ).resize(function() {
@@ -264,3 +246,8 @@ $( window ).resize(function() {
         $('.man').removeClass('man');
     }
 });
+
+
+
+
+
