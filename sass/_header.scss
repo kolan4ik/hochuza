@@ -7,6 +7,7 @@
   left: 0;
   top: 0;
   overflow: hidden;
+  z-index: 5;
   .wrapper{
     padding: 0 10px;
     @include box-sizing(border-box);
@@ -282,3 +283,7 @@
 .icon-limit:before {
   content: "\e627";
 }
+
+.screen{}
+.screen{}
+.screen{}

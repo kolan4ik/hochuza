@@ -5,6 +5,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
+  z-index: 5;
   .wrapper{
     @include box-sizing(border-box);
     max-width: 555px;
