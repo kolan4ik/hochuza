@@ -8681,24 +8681,47 @@ h4 {
 }
 /* line 102, ../sass/_footer.scss */
 .page3.active .small-text i:nth-child(24) {
-  -webkit-transition-delay: 0.96s;
-  -moz-transition-delay: 0.96s;
-  -o-transition-delay: 0.96s;
-  transition-delay: 0.96s;
-  -webkit-transition-duration: 0s;
-  -moz-transition-duration: 0s;
-  -o-transition-duration: 0s;
-  transition-duration: 0s;
-  opacity: 1;
+    -webkit-transition-delay: 0.96s;
+    -moz-transition-delay: 0.96s;
+    -o-transition-delay: 0.96s;
+    transition-delay: 0.96s;
+    opacity: 1;
+}
+.page3.active .small-text i:nth-child(25) {
+    -webkit-transition-delay: 1s;
+    -moz-transition-delay: 1s;
+    -o-transition-delay: 1s;
+    transition-delay: 1s;
+    opacity: 1;
+}
+.page3.active .small-text i:nth-child(26) {
+    -webkit-transition-delay:1.04s;
+    -moz-transition-delay: 1.04s;
+    -o-transition-delay: 1.04s;
+    transition-delay: 1.04s;
+    opacity: 1;
+}
+.page3.active .small-text i:nth-child(27) {
+    -webkit-transition-delay:1.08s;
+    -moz-transition-delay: 1.08s;
+    -o-transition-delay: 1.08s;
+    transition-delay: 1.08s;
+    -webkit-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -o-transition-duration: 0s;
+    transition-duration: 0s;
+    opacity: 1;
 }
 /* line 107, ../sass/_footer.scss */
 .page3.active .cash i:nth-child(24) {
-  -webkit-transition-delay: 2s;
-  -moz-transition-delay: 2s;
-  -o-transition-delay: 2s;
-  transition-delay: 2s;
-  opacity: 1;
+    -webkit-transition-delay: 2s;
+    -moz-transition-delay: 2s;
+    -o-transition-delay: 2s;
+    transition-delay: 2s;
+    opacity: 1;
 }
+
+
 /* line 102, ../sass/_footer.scss */
 .page3.active .small-text i:nth-child(25) {
   -webkit-transition-delay: 1s;
@@ -9018,10 +9041,10 @@ h4 {
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
-    -webkit-transition-property: left;
-    -moz-transition-property: left;
-    -o-transition-property: left;
-    transition-property: left;
+    -webkit-transition-property: left, width;
+    -moz-transition-property: left, width;
+    -o-transition-property: left, width;
+    transition-property: left, width;
 }
 /* line 342, ../sass/_footer.scss */
 .man-move.big {
@@ -9069,12 +9092,8 @@ h4 {
 }
 /* line 375, ../sass/_footer.scss */
 .viewing-page-5 .man-move {
-  -webkit-transition-duration: 0s, 0s;
-  -moz-transition-duration:0s, 0s;
-  -o-transition-duration: 0s, 0s;
-  transition-duration: 0.05s, 0.5s;
 
-  background: url("../images/men-planshet.png") no-repeat;
+  background: url("../images/men-planshet.png") no-repeat left bottom;
   width: 210px;
   height: 297px;
   left: 41%;
