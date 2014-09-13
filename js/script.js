@@ -14,7 +14,14 @@ $(document).ready(function(){
     if($('.page2').hasClass('active')){
         alert('1')
     }
-
+    if ($.fn.onePageScroll !== undefined ) {
+        onePageScroll(".main", {
+            sectionContainer: "section",
+            loop: false,
+            pagination: false,
+            responsiveFallback: false
+        });
+    }
     if ($.fn.checkBox !== undefined ) {
         $('.checkbox-item').checkBox();
     }
