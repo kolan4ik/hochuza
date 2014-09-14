@@ -8164,7 +8164,7 @@ h4 {
 
 /* line 74, ../sass/_footer.scss */
 .page2 {
-  background: url("../images/page3-bg.png") no-repeat center 38%;
+  background: url("../images/page3-bg.png") no-repeat center 35%;
   position: relative;
 }
 /* line 79, ../sass/_footer.scss */
@@ -8765,7 +8765,7 @@ h4 {
 
 /* line 118, ../sass/_footer.scss */
 .page5 .big-search{
-    margin-top: 0;
+    margin-top: -30px;
 }
 .page5 {
   position: relative;
@@ -8776,8 +8776,8 @@ h4 {
     bottom: 150%;
     left: 50%;
     margin-left: -86px;
-    -webkit-transition: bottom 2s,transform 2s ;
-    transition: bottom 2s,transform 2s ;
+    -webkit-transition: all 2s ;
+    transition: all 2s ;
     -ms-transform: rotate(1000deg);
     -webkit-transform: rotate(1000deg);
     transform: rotate(1000deg);
@@ -8786,11 +8786,11 @@ h4 {
 /* line 121, ../sass/_footer.scss */
 .page5.active .rotate-img {
   bottom: 50px;
-    -ms-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-    -webkit-transition:bottom 2s,transform 2s ;
-    transition:bottom 2s,transform 2s ;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition:all 2s ;
+    transition:all 2s ;
 }
 
 /* line 133, ../sass/_footer.scss */
@@ -9008,7 +9008,7 @@ h4 {
   width: 31px;
   height: 41px;
   position: absolute;
-  bottom: 66px;
+  bottom: 32px;
   left: 9%;
 }
 
@@ -9105,7 +9105,10 @@ h4 {
 }
 .main{
     z-index: 1;
-
+}
+.viewing-page-4 .rotate-img{
+    -webkit-transition:all 3s ;
+    transition:all 3s ;
 }
 .viewing-page-5 .main{
     z-index: 11;
