@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0c2b090-d113-4071-bf54-f6475d5c9c4f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/page1-bg.png" afterPath="$PROJECT_DIR$/images/page1-bg.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/landing.css" afterPath="$PROJECT_DIR$/css/landing.css" />
     </list>
     <ignored path="exemple.iws" />
@@ -57,8 +58,8 @@
           <file leaf-file-name="landing.css" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/landing.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.73690474" vertical-offset="36696" max-vertical-offset="37536">
-                  <caret line="9130" column="29" selection-start-line="9130" selection-start-column="29" selection-end-line="9130" selection-end-column="29" />
+                <state vertical-scroll-proportion="0.33333334" vertical-offset="20426" max-vertical-offset="37536">
+                  <caret line="8153" column="63" selection-start-line="8153" selection-start-column="63" selection-end-line="8153" selection-end-column="63" />
                   <folding>
                     <element signature="e#39#59#0" expanded="false" />
                     <element signature="e#200#294#0" expanded="false" />
@@ -1746,12 +1747,12 @@
       <workItem from="1410467316453" duration="3488000" />
       <workItem from="1410523763306" duration="1856000" />
       <workItem from="1410528250977" duration="118000" />
-      <workItem from="1410724261528" duration="5746000" />
+      <workItem from="1410724261528" duration="5975000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19475000" />
+    <option name="totallyTimeSpent" value="19704000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1634" height="1066" extended-state="6" />
@@ -7280,8 +7281,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/landing.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73690474" vertical-offset="36696" max-vertical-offset="37536">
-          <caret line="9130" column="29" selection-start-line="9130" selection-start-column="29" selection-end-line="9130" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="20426" max-vertical-offset="37536">
+          <caret line="8153" column="63" selection-start-line="8153" selection-start-column="63" selection-end-line="8153" selection-end-column="63" />
           <folding>
             <element signature="e#39#59#0" expanded="false" />
             <element signature="e#200#294#0" expanded="false" />
