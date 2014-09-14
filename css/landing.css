@@ -8129,7 +8129,7 @@ h4 {
 /* line 48, ../sass/_footer.scss */
 .page_container h2 {
   font-weight: normal;
-  font-size: 30px;
+  font-size: 25px;
   line-height: normal;
 }
 /* line 53, ../sass/_footer.scss */
@@ -8764,19 +8764,23 @@ h4 {
 }
 
 /* line 118, ../sass/_footer.scss */
+.page5 .big-search{
+    margin-top: 0;
+}
 .page5 {
   position: relative;
     overflow: hidden;
 }
 .rotate-img {
-
     position: absolute;
-    bottom: 100%;
+    bottom: 150%;
     left: 50%;
     margin-left: -86px;
-
-    -webkit-transition: all 2s;
-    transition: all 2s;
+    -webkit-transition: bottom 2s,transform 2s ;
+    transition: bottom 2s,transform 2s ;
+    -ms-transform: rotate(1000deg);
+    -webkit-transform: rotate(1000deg);
+    transform: rotate(1000deg);
 }
 
 /* line 121, ../sass/_footer.scss */
@@ -8785,6 +8789,8 @@ h4 {
     -ms-transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
+    -webkit-transition:bottom 2s,transform 2s ;
+    transition:bottom 2s,transform 2s ;
 }
 
 /* line 133, ../sass/_footer.scss */
@@ -9122,7 +9128,7 @@ h4 {
 }
 .viewing-page-5 .man-move {
 
-  background: url("../images/men-planshet.png") no-repeat left bottom;
+  background: url("../images/sad-men.png") no-repeat left bottom;
   width: 210px;
   height: 297px;
   left: 454px;
