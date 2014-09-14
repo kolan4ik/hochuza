@@ -8164,7 +8164,7 @@ h4 {
 
 /* line 74, ../sass/_footer.scss */
 .page2 {
-  background: url("../images/page3-bg.png") no-repeat center 41%;
+  background: url("../images/page3-bg.png") no-repeat center 38%;
   position: relative;
 }
 /* line 79, ../sass/_footer.scss */
@@ -8768,13 +8768,23 @@ h4 {
   position: relative;
     overflow: hidden;
 }
+.rotate-img {
+
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -86px;
+
+    -webkit-transition: all 2s;
+    transition: all 2s;
+}
+
 /* line 121, ../sass/_footer.scss */
 .page5.active .rotate-img {
-  -ms-transform: scale(0.5) rotate(250deg);
-  -webkit-transform: scale(0.5) rotate(250deg);
-  transform: scale(0.65) rotate(319deg);
-  bottom: 27px;
-    opacity: 1;
+  bottom: 50px;
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 
 /* line 133, ../sass/_footer.scss */
@@ -9105,12 +9115,7 @@ h4 {
   left: 465px;
   background: url("../images/men.png") no-repeat;
 }
-.viewing-page-4 .rotate-img {
-    -webkit-transition-duration: 0s;
-    -moz-transition-duration: 0s;
-    -o-transition-duration: 0s;
-    transition-duration: 0s;
-}
+
 /* line 375, ../sass/_footer.scss */
 .viewing-page-5 .page4 {
     opacity: 0.25;
@@ -9124,15 +9129,3 @@ h4 {
 }
 
 /* line 383, ../sass/_footer.scss */
-.rotate-img {
-  -webkit-transition-duration: 1s;
-  -moz-transition-duration: 1s;
-  -o-transition-duration: 1s;
-  transition-duration: 1s;
-  position: absolute;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -84px;
-    opacity: 1;
-
-}
