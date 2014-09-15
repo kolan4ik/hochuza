@@ -9028,15 +9028,17 @@ h4 {
 
 /* line 299, ../sass/_footer.scss */
 .scroll-img {
-  background: url("../images/arrows.gif") no-repeat;
-  width: 31px;
+  width: 200px;
   height: 41px;
   position: absolute;
   bottom: 32px;
   left: 50%;
     margin: 0 0 0 -487px;
-
-
+    font-family: "jakocttbold";
+    font-size: 1.5rem;
+    color: #00ad9d;
+    -webkit-animation: pulseBorder 1s infinite; /* Chrome, Safari, Opera */
+    animation: pulseBorder 1s infinite;
 }
 
 /* line 307, ../sass/_footer.scss */
