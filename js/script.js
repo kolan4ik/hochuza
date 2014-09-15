@@ -254,15 +254,13 @@ $( window ).resize(function() {
         $('.man').removeClass('man');
     }
 });
-$(window).on('resize ready',function(){
+$(window).on('resize load',function(){
    if($(window).width() <= 1024 ){
        $('.scroller ').addClass('small-screen ')
-       .addClass('small-screen-show')
    }
     else{
        $('.scroller ').removeClass('small-screen ')
            .removeClass('small-screen-show')
-
    }
 });
 

@@ -7950,8 +7950,7 @@ h4 {
 /***************************************************/
 .header{
     z-index: 20;
-    padding-top: 15px;
-    padding-bottom: 15px;
+
     -webkit-transition-property: padding;
     -moz-transition-property: padding;
     -o-transition-property: padding;
@@ -8050,6 +8049,7 @@ h4 {
 }
 .small-screen .big-screen-in{
     display: none;
+
 }
 .small-screen .header{
     padding-bottom: 39px;
@@ -8063,11 +8063,9 @@ h4 {
     display: table;
 }
 .small-screen .small-screen-in{
-    display: table-cell !important;
+    display: table-cell;
 }
-.small-screen-in{
-    display: none !important;
-}
+
 /***************************************************/
 /*      footer
 /***************************************************/
@@ -9091,9 +9089,12 @@ h4 {
   position: relative;
   margin: 0 auto;
 }
-.viewing-page-1 .header{
-    padding-top: 48px;
-    padding-bottom: 39px;
+.viewing-page-2 .header,
+.viewing-page-3 .header,
+.viewing-page-4 .header,
+.viewing-page-5 .header{
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 /* line 353, ../sass/_footer.scss */
 
