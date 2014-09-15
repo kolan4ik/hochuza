@@ -8755,9 +8755,6 @@ h4 {
     transition-delay: 2s;
     opacity: 1;
 }
-
-
-/* line 102, ../sass/_footer.scss */
 .page3.active .small-text i:nth-child(25) {
   -webkit-transition-delay: 1s;
   -moz-transition-delay: 1s;
@@ -8769,7 +8766,6 @@ h4 {
   transition-duration: 0s;
   opacity: 1;
 }
-/* line 107, ../sass/_footer.scss */
 .page3.active .cash i:nth-child(25) {
   -webkit-transition-delay: 2.04s;
   -moz-transition-delay: 2.04s;
@@ -8777,8 +8773,6 @@ h4 {
   transition-delay: 2.04s;
   opacity: 1;
 }
-
-/* line 114, ../sass/_footer.scss */
 .page4 {
   background: url("../images/pedestal.png") no-repeat center 98%;
   position: relative;
@@ -9034,11 +9028,16 @@ h4 {
   bottom: 32px;
   left: 50%;
     margin: 0 0 0 -487px;
+<<<<<<< HEAD
     font-family: "jakocttbold";
     font-size: 1.5rem;
     color: #00ad9d;
     -webkit-animation: pulseBorder 1s infinite; /* Chrome, Safari, Opera */
     animation: pulseBorder 1s infinite;
+=======
+
+
+>>>>>>> 48e8116980fdad06af8371f83f8aba1743c6605f
 }
 
 /* line 307, ../sass/_footer.scss */
