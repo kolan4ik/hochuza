@@ -399,7 +399,7 @@ function onePageScroll(element, options) {
 		var next_index = next.dataset.index;
 		_removeClass(current, "active");
 		_addClass(next, "active");
-		
+
 		if(settings.pagination == true) {
 		  _removeClass(document.querySelector(".onepage-pagination li a" + "[data-index='" + index + "']"), "active");
 		  _addClass(document.querySelector(".onepage-pagination li a" + "[data-index='" + next_index + "']"), "active");
