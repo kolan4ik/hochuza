@@ -8149,19 +8149,37 @@ h4 {
 /* line 62, ../sass/_footer.scss */
 .page_container .big-search input[type="text"] {
   width: 498px;
+    color: #000;
 }
-
+@-webkit-keyframes pulseBorder{
+    0%   { bottom: 40px }
+    50%  { bottom: 32px; }
+    100%   { bottom: 40px }
+}
+@keyframes pulseBorder {
+    0%   { bottom: 40px }
+    50%  { bottom: 32px; }
+    100%   { bottom: 40px }
+}
 /* line 67, ../sass/_footer.scss */
 .page1 {
-  background: url("../images/page1-bg.png") no-repeat center 75%;
+  background: url("../images/page1-bg.png") no-repeat center 80%, url("../images/heaedr-top.png") no-repeat center 239px;
 }
 /* line 69, ../sass/_footer.scss */
 .page1 .page_container {
     padding: 145px 0 65px;
 }
 .page1 .scroll-img {
-  left: 50%;
-  margin-left: -15px;
+    background: none;
+    font-family: "jakocttbold";
+    width: 100%;
+    text-align: center;
+    left: 0;
+    margin: 0;
+    font-size: 1.5rem;
+    color: #00ad9d;
+    -webkit-animation: pulseBorder 1s infinite; /* Chrome, Safari, Opera */
+    animation: pulseBorder 1s infinite;
 }
 
 /* line 74, ../sass/_footer.scss */
@@ -8234,6 +8252,7 @@ h4 {
   -moz-transition-duration: 0s;
   -o-transition-duration: 0s;
   transition-duration: 0s;
+    cursor: default;
 }
 /* line 102, ../sass/_footer.scss */
 .page3.active .small-text i:nth-child(1) {
@@ -8821,6 +8840,7 @@ h4 {
   font-size: 24px;
   position: relative;
   float: left;
+    cursor: default;
   width: 606px;
 }
 /* line 156, ../sass/_footer.scss */
@@ -8879,29 +8899,31 @@ h4 {
   display: inline-block;
   position: relative;
   line-height: 66px;
-  padding: 0 0 0 20px;
+  padding: 0 0 0 26px;
   font-size: 23px;
   margin-left: 31px;
+    text-align: center;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 /* line 205, ../sass/_footer.scss */
 .page_container .cash i {
-  display: inline;
+  display: inline-block;
   opacity: 0;
   -webkit-transition-property: opacity;
   -moz-transition-property: opacity;
   -o-transition-property: opacity;
   transition-property: opacity;
-  float: left;
   font-family: "HelveticaNeueCyr";
+    float: left;
 }
 
 /* line 215, ../sass/_footer.scss */
 .exenple-form button {
   width: 190px;
   padding: 0;
+    cursor: default;
 }
 
 /* line 220, ../sass/_footer.scss */
@@ -9011,7 +9033,10 @@ h4 {
   height: 41px;
   position: absolute;
   bottom: 32px;
-  left: 9%;
+  left: 50%;
+    margin: 0 0 0 -487px;
+
+
 }
 
 /* line 307, ../sass/_footer.scss */
@@ -9143,3 +9168,22 @@ h4 {
 }
 
 /* line 383, ../sass/_footer.scss */
+.onepage-pagination .active{
+    background-color: #d1d1d1;
+}
+.onepage-pagination a{
+    display: block;
+    height: 100%;
+}
+.onepage-pagination li{
+    height: 20%;
+}
+.onepage-pagination{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 10px;
+    background: #e7e7e7;
+    z-index: 70;
+}

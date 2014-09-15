@@ -7,8 +7,9 @@ $(document).ready(function(){
     onePageScroll(".main", {
         sectionContainer: "section",
         loop: false,
-        pagination: false,
-        responsiveFallback: false
+        keyboard: true,
+        pagination: true,
+        responsiveFallback: true
     });
 
     if($('.page2').hasClass('active')){
