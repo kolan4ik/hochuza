@@ -276,11 +276,11 @@ $( window ).resize(function() {
     }
 });
 $(window).on('resize load',function(){
-   if($(window).width() <= 1024 ){
-       $('.scroller ').addClass('small-screen ')
+   if($(window).width() <= 640 ){
+       $('body ').addClass('small-screen ')
    }
     else{
-       $('.scroller ').removeClass('small-screen ')
+       $('body').removeClass('small-screen ')
            .removeClass('small-screen-show')
    }
 
