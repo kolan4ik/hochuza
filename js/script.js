@@ -4,7 +4,7 @@ $(document).ready(function(){
     $('.orders-text > p').height(139);
     $('.screen-landing').height($(window).height());
 
-    onePageScroll(".main", {
+    $(".main").onepage_scroll({
         sectionContainer: "section",
         loop: false,
         keyboard: true,
@@ -20,7 +20,7 @@ $(document).ready(function(){
                 $('body').removeClass('last-screen')
             }
         },
-        responsiveFallback: true
+        responsiveFallback: false
     });
 
     if($('.page2').hasClass('active')){

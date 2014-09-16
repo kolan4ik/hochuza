@@ -445,6 +445,9 @@ h4 {
 /***************************************************/
 /*      header
 /***************************************************/
+.header .wrapper{
+    padding: 0 22px 0 10px !important;
+}
 .header{
     z-index: 20;
     -webkit-transition-property: padding;
@@ -457,6 +460,7 @@ h4 {
     transition-duration: 0.5s;
     min-width: 1024px;
 }
+
 .small-screen .in-site{
     position: relative;
     top: 7px;
@@ -613,8 +617,8 @@ h4 {
 .main section {
     overflow: hidden;
     min-height: 100%;
-    height: auto;
     height: 100%;
+    width: 100%;
 }
 .main > img {
     position: absolute;
@@ -1789,7 +1793,7 @@ h4 {
 }
 
 .viewing-page-3 .man-move {
-    left: 933px;
+    left: 865px;
 }
 .main{
     z-index: 1;
