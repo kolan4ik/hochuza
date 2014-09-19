@@ -1718,6 +1718,7 @@ h4 {
     margin: 0 0 0 -487px;
     -webkit-animation: pulseBorder 1s infinite;
     animation: pulseBorder 1s infinite;
+    cursor: pointer;
 }
 
 .question {

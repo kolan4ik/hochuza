@@ -22,7 +22,9 @@ $(document).ready(function(){
         },
         responsiveFallback: false
     });
-
+    $('.scroll-img').on('click', function(){
+        $(".main").moveDown();
+    });
     if($('.page2').hasClass('active')){
         alert('1')
     }
