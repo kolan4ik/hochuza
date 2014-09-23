@@ -1858,3 +1858,87 @@ h4 {
     left: 454px;
 
 }
+
+
+
+.face {
+    border-radius:50%;
+    background: url("../images/clock-bg.png") no-repeat;
+    background-size: contain;
+    height:105px;
+    width:105px;
+    position:absolute;
+    top: 231px;
+    right: 278px;
+    -ms-transform: scale(0.8); /* IE 9 */
+    -webkit-transform: scale(0.8); /* Chrome, Safari, Opera */
+    transform: scale(0.8);
+}
+
+.seconds-hand {
+    position:absolute;
+    left:50%;
+    top:22px;
+    margin-left:-1px;
+    width:2px;
+    height:30px;
+    background-color:#637989;
+    border-radius:4px;
+    -webkit-webkit-webkit-transform-origin: bottom center;
+    -moz-webkit-webkit-transform-origin: bottom center;
+    -ms-webkit-webkit-transform-origin: bottom center;
+    -o-webkit-webkit-transform-origin: bottom center;
+    transform-origin: bottom center;
+}
+.center {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-3.5px;
+    margin-left:-3.5px;
+    border-radius:50%;
+    height:7px;
+    width:7px;
+    background-color:#637989;
+}
+.minute-hand {
+    position:absolute;
+    left:50%;
+    top:22px;
+    margin-left:-3.5px;
+    border-radius:4px;
+    width:7px;
+    height:30px;
+    background-color:#637989;
+    -webkit-webkit-webkit-transform-origin: bottom center;
+    -moz-webkit-webkit-transform-origin: bottom center;
+    -ms-webkit-webkit-transform-origin: bottom center;
+    -o-webkit-webkit-transform-origin: bottom center;
+    transform-origin: bottom center;
+}
+
+.hour-hand {
+    position:absolute;
+    border-radius:4px;
+    left:50%;
+    top:50%;
+    margin-left:-3.5px;
+    margin-top:-20px;
+    width:7px;
+    height:20px;
+    background-color:#637989;
+
+    -webkit-webkit-webkit-transform-origin: bottom center;
+    -moz-webkit-webkit-transform-origin: bottom center;
+    -ms-webkit-webkit-transform-origin: bottom center;
+    -o-webkit-webkit-transform-origin: bottom center;
+    transform-origin: bottom center;
+}
+
+.smooth {
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -ms-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    transition: all 1s linear;
+}
