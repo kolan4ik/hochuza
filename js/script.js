@@ -282,7 +282,7 @@ $(document).ready(function(){
         var date = new Date();
         var sec = date.getSeconds();
         var min = date.getMinutes();
-        var hrs = date.getHours() - "1";
+        var hrs = date.getHours() - 2;
 
         var mapSec = sec.map(0, 59, 0, 360);
         var mapMin = min.map(0,59,0,360);
