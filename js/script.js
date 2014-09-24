@@ -9,19 +9,27 @@ $(document).ready(function(){
         loop: false,
         keyboard: true,
         pagination: true,
-        beforeMove: function (index) {
+        responsiveFallback: false,
+        afterMove: function (index) {
+            $('body').removeClass('last-screen');
             if($('body').hasClass('viewing-page-5')){
                 setTimeout(function(){
                     $('body').addClass('last-screen')
-
-                }, 1600);
+                }, 1000);
             }
+            if($('body').hasClass('viewing-page-4')){
+                $('body').removeClass('last-screen');
+            }
+
             else{
                 $('body').removeClass('last-screen')
             }
         },
-        responsiveFallback: false
-    });
+        beforeMove: function (index) {
+          $('body').removeClass('last-screen')
+        }
+
+        });
     $('.scroll-img').on('click', function(){
         $(".main").moveDown();
     });
